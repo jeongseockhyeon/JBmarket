@@ -47,7 +47,7 @@ export default function Talkarea() {
             id="messages"
             className="flex flex-col space-y-4 p-3 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch"
           >
-            {messages.map((msg, index) => {
+            {/* {messages.map((msg, index) => {
               return (
                 <div className="flex items-end justify-end">
                   <div className="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
@@ -62,7 +62,7 @@ export default function Talkarea() {
                   </div>
                 </div>
               )
-            })}
+            })} */}
           </div>
           <div className="border-t-2 border-gray-200 px-4 pt-4 mb-2 sm:mb-0">
             <div className="relative flex">
