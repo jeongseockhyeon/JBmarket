@@ -48,7 +48,10 @@ export default function AboutTeam() {
                   <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
                     정찬하
                   </h2>
-                  <Link legacyBehavior href="nextportfolio-rho.vercel.app">
+                  <Link
+                    legacyBehavior
+                    href="https://nextportfolio-phi.vercel.app/"
+                  >
                     <p className="leading-relaxed text-base">개인 포트폴리오</p>
                   </Link>
                 </div>
