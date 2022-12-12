@@ -21,7 +21,7 @@ export default function Talkscreen() {
 
           <div className="mt-8 text-center">
             <h5 className="hidden mt-4 text-xl font-semibold text-gray-600 lg:block">
-              {session.user.name}
+              {/* {session.user.name} */}
             </h5>
             <span className="hidden text-gray-400 lg:block">Admin</span>
           </div>
