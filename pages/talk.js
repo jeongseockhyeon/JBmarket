@@ -3,7 +3,7 @@ import React from 'react'
 import Talkarea from '../components/Talkarea'
 
 export default function Talkscreen() {
-  const { data: session } = useSession()
+  // const { data: session } = useSession()
   return (
     <div>
       {/* <!-- component --> */}
