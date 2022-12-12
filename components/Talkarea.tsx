@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import io from 'socket.io-client'
+import handlerKeypress from '../utils/KeypressHandler'
 
-let socket
+let socket = io()
 
 type Message = {
   author: String
@@ -11,7 +12,7 @@ type Message = {
 export default function Talkarea() {
   const [username] = useState('')
   const [message, setMessage] = useState('')
-  const [messages, setMessages] = useState<Array<Message>>([])
+  const [messages, setMessages] = useState<Message[]>([])
 
   useEffect(() => {
     socketInitializer()
@@ -37,13 +38,6 @@ export default function Talkarea() {
     setMessage('')
   }
 
-  const handlerKeypress = (e) => {
-    if (e.keyCode === 13) {
-      if (message) {
-        sendMessage()
-      }
-    }
-  }
   return (
     <div>
       <div>
